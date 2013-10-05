@@ -1,5 +1,4 @@
 body{
-	margin: 0;
 }
 header{
 	width:100%;
@@ -45,8 +44,46 @@ header a{
 	font-family: 'Arvo', serif;
 	font-weight: 700;
 	letter-spacing: 0.2em;
-
 }
 li{
 	list-style: none;
+}
+h1{
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	font-weight: 900;
+	line-height: 170%
+}
+h2{
+	color: #35a3b5;
+	font-size: 100%;
+	font-family: 'Paprika', cursive;
+}
+.making{
+	color: #99b05b;
+	font-size: 220%;
+
+}
+.your{
+	color: white;
+	font-size: 170%
+}
+.web{
+	color: #35a3b5;
+	font-size: 170%
+}
+.work{
+	color: #e4595c;
+	font-size: 290%
+}
+.container{
+	padding: 40px;
+	background-color: #c5cbc2;
+	width: 300px;
+	margin: 0 auto;
+	border: solid red;
+}
+p{
+	color: #626462;
+	font-size: 70%;
 }
