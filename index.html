@@ -5,41 +5,89 @@
 		<meta charset="utf-8" />
 		<meta name="description" content="Sitio elaborado para el Curso de Diseño Front-End">
         <meta name="author" content="Karla Vargas, Samira Bajbuj, Catalina Reyes">
+        <link rel="stylesheet" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
-		<link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 		<!--Inicio del Script-->
 		<script src="js/jquery-1.4.3.min.js" type="text/javascript"></script>
-		<script>
-		</script>
+<script>
+	$(function() {
+        $.fn.parallax = function(options){
+            var $$ = $(this);
+            offset = $$.offset();
+            var defaults = {
+                "start": 0,
+                "stop": offset.top + $$.height(),
+                "coeff": 0.95
+            };
+            var opts = $.extend(defaults, options);
+            return this.each(function(){
+                $(window).bind('scroll', function() {
+                    windowTop = $(window).scrollTop();  
+                    if((windowTop >= opts.start) && (windowTop <= opts.stop)) {
+                        newCoord = windowTop * opts.coeff;
+                         
+                        $$.css({
+                            "background-position": "0 "+ newCoord + "px"
+                        });
+                    } 
+                });
+            });
+        };
+		
+        $('.background2').parallax({ "coeff":-0.2 });
+		$('.middleback2').parallax({ "coeff": -1.50 });
+		$('h1').parallax({ "coeff": 3.15 });
+        $('p').parallax({ "coeff": 3.15 });
+        $('.background3').parallax({ "coeff": 0.025 });
+        $('.middleback3').parallax({ "coeff": -3 });
+        $('.back_2 .middleback_2 .middlefront_2').parallax({ "coeff": 4.5 });
+        $('.back_2 .middleback_2 .middlefront_2 .logo_2').parallax({ "coeff": -1.5 });
+	})
+</script>
 		<!--Fin del Script-->
 	</head>
 	<body>
 		<header>
 				<img src="img/logo_header.png" title="logo">
+				<span>viaja por menos, comparte más.</span>
 				<a href="#">Descargar</a>
 		</header>
 		<!--Fin del Header-->
 		<section>
-			<div class="first">
-				<h1><a name="1">RÜPÜ</a></h1>
-				<p>Conoce esta aplicación con la cual podrás viajar por menos y compartir más.</p>
-                <p>Si quieres saber más desplaza hacia abajo.</p>
+			<div class="background1">
+				<div>
+					<h1><a name="1"><img src="img/rupulogo.png" title="logo"></a></h1>
+					<p>Conoce esta aplicación con la cual podrás viajar por menos y compartir más. Si quieres saber más desplaza hacia abajo.</p>  
+				</div>
 			</div>
-			<div class="second">
-				<h1><a name="2">Descubre</a></h1>
-				<p>Todo lo que necesitas saber sobre los mejores destinos alrededor del mundo para tu próximo viaje.</p>
+			<div class="background2">
+				<div class="middleback2">
+					<div>
+						<h1><a name="2">Descubre</a></h1>
+						<p>Todo lo que necesitas saber sobre los mejores destinos alrededor del mundo para tu próximo viaje.</p>
+					</div>
+				</div>
 			</div>
-			<div class="third">
-				<h1><a name="3">Explora</a></h1>
-				<p>Tu ciudad a través de nuestro mapa, encontrando nuevos lugares y formas de divertirte cerca de donde estás.</p>
+			<div class="background3">
+				<div class="middleback3">
+					<div>
+						<h1><a name="3">Explora</a></h1>
+						<p>Tu ciudad a través de nuestro mapa, encontrando nuevos lugares y formas de divertirte cerca de donde estás.</p>
+					</div>
+				</div>
 			</div>
-			<div class="fourth">
-				<h1><a name="4">Comparte</a></h1>
-				<p>En tiempo real tus viajes, comentarios y experiencias con toda una red de viajeros en más de 200 países.</p>
+			<div class="background4">
+				<div>
+					<h1><a name="4">Comparte</a></h1>
+					<p>En tiempo real tus viajes, comentarios y experiencias con toda una red de viajeros en más de 200 países.</p>
+				</div>
 			</div>
-			<div class="fifth">
-				<p><a name="5">Descarga ya RÜPÜ</a><p>
-				<a href="#">Descargar</a>	
+			<div class="background5">
+				<div>
+					<p><a name="5">Descarga ya RÜPÜ</a><p>
+					<a href="#">Descargar</a>	
+				</div>
 			</div>
 		</section>
 		<nav>

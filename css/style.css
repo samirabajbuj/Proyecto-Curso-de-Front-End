@@ -1,89 +1,106 @@
-body{
+*{
+	margin: 0;
 }
 header{
-	width:100%;
-	height: 40px;
-	background: #008182;
-	padding: 0 10%;
+	height: 41px;
+	width: 100%;
+	background-color: #eeeeee;
+	padding: 12px;
+	position: fixed;
+	z-index: 10;
 }
-article{
-	width:100%;
+header > img{
+	margin-left:  60px;
+}
+header > span{
+	color: #066666;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+	display: inline-block;
+	margin-left: 120px;
+}
+header > a{
+   border-top: 1px solid #99cccc;
+   background: #99cccc;
+   background: -webkit-gradient(linear, left top, left bottom, from(#047f7d), to(#99cccc));
+   background: -webkit-linear-gradient(top, #047f7d, #99cccc);
+   background: -moz-linear-gradient(top, #047f7d, #99cccc);
+   background: -ms-linear-gradient(top, #047f7d, #99cccc);
+   background: -o-linear-gradient(top, #047f7d, #99cccc);
+   padding: 8px 15px;
+   -webkit-border-radius: 14px;
+   -moz-border-radius: 14px;
+   border-radius: 14px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: #ffffff;
+   font-size: 19px;
+   font-family: 'Open Sans', sans-serif;
+   text-decoration: none;
+   float: right;
+   margin-right: 60px;
+   }
+header > a:hover {
+   border-top-color: #016666;
+   background: #016666;
+   color: #ffffff;
+   }
+header > a:active {
+   border-top-color: #016666;
+   background: #016666;
+   }
+div{
+	width: 100%;
 	height: 800px;
-	background: yellow;
-	margin: 0;
-	position: relative;
+	background-image: url("../img/mano1.3.png");
+	background-position: 10% -5%;
+	background-attachment: fixed;
+	background-repeat: none;
 }
-.first{
-	bottom:20px;
+.background2{
+	width: 100%;
+	height: 800px;
+	background-image: url("../img/machu-picchu.jpg");
+	background-size: cover;
 }
-.second{
-	bottom:40px;
+.background1{
+	width: 100%;
+	height: 800px;
+	background-image: url("../img/blizzard.png");
 }
-.third{
-	bottom:60px;
+.background3{
+	width: 100%;
+	height: 800px;
+	background-image: url("../img/saudi-arabia.jpg");
+	background-size: cover;
 }
-.fourth{
-	bottom:80px;
-}
-.fifth{
-	bottom:100px;
-}
-footer{
-	width:100%;
-	height: 240px;
-}
-header a{
-	color: #E7E2CE;
-	margin: 10px 50px;
-	background-color: #008182;
-	padding: 10px 30px;
-	text-decoration: none;
-	position: relative;
-	bottom: 13px;
-	box-shadow: inset 0px 0px 20px #004C4A;
-	font-family: 'Arvo', serif;
-	font-weight: 700;
-	letter-spacing: 0.2em;
-}
-li{
-	list-style: none;
+.middleback3{
+	background-image: url("../img/globos.png");
+	background-repeat: repeat-y;
+	background-position: center;
 }
 h1{
+	font-size: 34px;
 	font-family: 'Open Sans', sans-serif;
-	text-transform: uppercase;
-	font-weight: 900;
-	line-height: 170%
-}
-h2{
-	color: #35a3b5;
-	font-size: 100%;
-	font-family: 'Paprika', cursive;
-}
-.making{
-	color: #99b05b;
-	font-size: 220%;
-
-}
-.your{
+	background-color: rgba(31, 95, 91, .7);
+	padding: 15px;
 	color: white;
-	font-size: 170%
-}
-.web{
-	color: #35a3b5;
-	font-size: 170%
-}
-.work{
-	color: #e4595c;
-	font-size: 290%
-}
-.container{
-	padding: 40px;
-	background-color: #c5cbc2;
-	width: 300px;
-	margin: 0 auto;
-	border: solid red;
+	display: inline-block;
+	text-transform: uppercase;
+	margin: 300px 0 0 600px;
 }
 p{
-	color: #626462;
-	font-size: 70%;
+	font-size: 18px;
+	font-family: 'Open Sans', sans-serif;
+	background-color: rgba(31, 95, 91, .7);
+	padding: 15px;
+	color: white;
+	display: inline-block;
+	margin: 20px 100px 0 600px;
+}
+.middleback2{
+	background-image: url("../img/nubes.png");
+	opacity: 0.8;
 }
